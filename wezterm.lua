@@ -17,7 +17,6 @@ config.font_size = 10
 config.launch_menu = launch_menu
 config.default_cursor_style = "BlinkingBar"
 config.disable_default_key_bindings = true
-config.keys = { { key = "V", mods = "CTRL", action = act.PasteFrom("Clipboard") } }
 config.mouse_bindings = mouse_bindings
 
 -- There are mouse binding to mimc Windows Terminal and let you copy
@@ -50,6 +49,9 @@ config.launch_menu = {
 }
 
 config.keys = {
+	{ key = "C", mods = "CTRL", action = act.CopyTo("ClipboardAndPrimarySelection") },
+	{ key = "V", mods = "CTRL", action = act.PasteFrom("Clipboard") },
+
 	-- Reload configuration
 	{ key = "r", mods = "ALT", action = wezterm.action.ReloadConfiguration },
 

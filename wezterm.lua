@@ -11,7 +11,9 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = "GruvboxDarkHard"
+
+-- config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("JetBrains Mono Regular")
 config.font_size = 10
 config.launch_menu = launch_menu
